@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 date_default_timezone_set('Europe/Dublin');
 ob_start();
 session_start();
-$environment = "";
+$environment = "prod";
 $host = "localhost";
 $dbusername = "root";
 $dbpwd = "";
