@@ -30,6 +30,7 @@ if (isset($_POST['submit'])) {
         // echo '<script>confirm("Are You Sure You Want to Delete the item")</script>';
         $del_id = $_POST['delete_id'];
         $delete_record = implode(",", $del_id);
+        $multiple_delete_video_result = multiple_services_delete_order($connection_string, $del_id);
         $delete_item = "DELETE FROM `services` WHERE id in ($delete_record)";
         $delete_item_result = mysqli_query($connection_string, $delete_item);
         if ($delete_item_result) {

@@ -91,3 +91,34 @@ function delete_service_order($connection_string, $del_order, $max_order)
         }
     }
 }
+function max_id($connection_string)
+{
+    $max_id = 0;
+    $maximum_order_query = "SELECT MAX(id) as max_id FROM `services` LIMIT 1";
+    $maximum_order_query_result = mysqli_query($connection_string, $maximum_order_query);
+    $max_id_result = mysqli_fetch_object($maximum_order_query_result);
+    if ($max_id_result) {
+        $max_id = $max_id_result->max_id;
+        return  $max_id;
+    } else {
+        return $max_id;
+    }
+}
+function multiple_services_delete_order($connection_string, $del_order)
+{
+    $max_id = max_id($connection_string);
+    foreach ($del_order as $video_id) {
+        $get_help_videos_list_id =  "SELECT `id`,`service_order` from `services` where `id` between '$video_id' and '$max_id'  AND `id`  NOT IN('$video_id') ";
+        $get_help_videos_list_result = mysqli_query($connection_string, $get_help_videos_list_id);
+        if (mysqli_num_rows($get_help_videos_list_result) > 0) {
+            $help_videos_data = mysqli_fetch_all($get_help_videos_list_result, MYSQLI_ASSOC);
+            foreach ($help_videos_data as $help_videos) {
+                $help_videos_id_new = $help_videos['id'];
+                $pre_order = $help_videos['service_order'];
+                $help_videos_order    =   $pre_order - 1;
+                $update_help_videos_query = "update `services` set `service_order`='$help_videos_order' where `id`='$help_videos_id_new'";
+                $update_result = mysqli_query($connection_string, $update_help_videos_query);
+            }
+        }
+    }
+}
