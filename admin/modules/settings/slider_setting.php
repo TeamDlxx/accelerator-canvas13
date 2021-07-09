@@ -258,7 +258,7 @@ if (isset($_POST['submit'])) {
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <label for="banner_image">Banner Image Recomended Size
-                                                                        (887 x 587)</label><a href="<?php echo $base_url . $dashboard_info->banner_image; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_info->banner_image; ?>" alt=""></a>
+                                                                        (1594 x 901)</label><a href="<?php echo $base_url . $dashboard_info->banner_image; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_info->banner_image; ?>" alt=""></a>
                                                                     <input type="file" class="form-control mb-4" id="banner_image" placeholder="Image" value="<?php echo $banner_image; ?>" name="banner_image">
 
 
@@ -266,8 +266,8 @@ if (isset($_POST['submit'])) {
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="banner_image_2">Image1 Recomended Size (802
-                                                                        x 614)</label><a href="<?php echo $base_url . $dashboard_info->banner_image_2; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_info->banner_image_2; ?>" alt=""></a>
+                                                                    <label for="banner_image_2">Image1 Recomended Size (807
+                                                                        x 635)</label><a href="<?php echo $base_url . $dashboard_info->banner_image_2; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_info->banner_image_2; ?>" alt=""></a>
                                                                     <input type="file" class="form-control mb-4" id="banner_image_2" placeholder="Image" value="<?php echo $banner_image_2; ?>" name="banner_image_2">
 
                                                                 </div>
@@ -275,23 +275,23 @@ if (isset($_POST['submit'])) {
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <label for="banner_image3">Image2 Recomended Size (404 x
-                                                                        312)</label><a href="<?php echo $base_url . $dashboard_info->banner_image3; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_info->banner_image3; ?>" alt=""></a>
+                                                                        302)</label><a href="<?php echo $base_url . $dashboard_info->banner_image3; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_info->banner_image3; ?>" alt=""></a>
                                                                     <input type="file" class="form-control mb-4" id="banner_image3" placeholder="Image" value="<?php echo $banner_image3; ?>" name="banner_image3">
 
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="banner_image4">Image3 Recomended Size (396 x
-                                                                        306)</label><a href="<?php echo $base_url . $dashboard_info->banner_image4; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_info->banner_image4; ?>" alt=""></a>
+                                                                    <label for="banner_image4">Image3 Recomended Size (404 x
+                                                                        302)</label><a href="<?php echo $base_url . $dashboard_info->banner_image4; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_info->banner_image4; ?>" alt=""></a>
                                                                     <input type="file" class="form-control mb-4" id="banner_image" placeholder="Image" value="<?php echo $banner_image4; ?>" name="banner_image4">
 
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="banner_image4">Image4 Recomended Size (799 x
-                                                                        303)</label><a href="<?php echo $base_url . $dashboard_info->image_2; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_info->image_2; ?>" alt=""></a>
+                                                                    <label for="banner_image4">Image4 Recomended Size (806 x
+                                                                        302)</label><a href="<?php echo $base_url . $dashboard_info->image_2; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_info->image_2; ?>" alt=""></a>
                                                                     <input type="file" class="form-control mb-4" id="image_2" placeholder="Image" value="<?php echo $image_2; ?>" name="image_2">
 
                                                                 </div>

@@ -193,8 +193,8 @@ if (isset($_POST['submit'])) {
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="image_1">Image 1 Recomended Size (613 X
-                                                                        482)</label><a href="<?php echo $base_url . $dashboard_data_result->image_1; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_data_result->image_1; ?>" alt=""></a>
+                                                                    <label for="image_1">Image 1 Recomended Size (570 X
+                                                                        686)</label><a href="<?php echo $base_url . $dashboard_data_result->image_1; ?>" target="_blank"><img class="image_size" src="<?php echo $base_url . $dashboard_data_result->image_1; ?>" alt=""></a>
                                                                     <input type="file" class="form-control mb-4" id="image_1" placeholder="Image 1" value="<?php echo $dashboard_data_result->image_2; ?>" name="image_1">
 
                                                                 </div>
