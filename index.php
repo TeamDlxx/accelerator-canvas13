@@ -153,7 +153,7 @@ include 'includes/header.php';
         </div>
         <div class="row mt-3 mt-lg-5">
             <div class="col-sm-12 text-center">
-                <button type="submit" id="contact" class="button-contact"><?= $service_button_text ?></button>
+                <a id="contact" href="#scrollform"> <button class="button-contact"><?= $service_button_text ?></button></a>
             </div>
         </div>
     </div>
@@ -203,7 +203,7 @@ include 'includes/header.php';
         </div>
     </div>
 </section>
-<section class="form-contact mt-3 mt-lg-5">
+<section class="form-contact mt-3 mt-lg-5" id="scrollform">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -227,7 +227,7 @@ include 'includes/header.php';
                         </div>
                         <div id="error" class="w-100">
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12" id="contact-form">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="d-flex border-bottom mt-5">
                                 <label for="name" class="form-label pt-3">NAME*</label>
                                 <input type="name" class="form-contact-control" id="name" placeholder="Type your full name">
@@ -277,9 +277,7 @@ include 'includes/header.php';
 <script>
     $(document).ready(function() {
         $('#contact').click(function(event) {
-            $('html, body').animate({
-                scrollTop: $("#contact-form").offset().top
-            }, 1000);
+            window.location('#scrollform');
         });
 
         $("#register").click(function(e) {
