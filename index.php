@@ -262,7 +262,7 @@ include 'includes/header.php';
                     </div>
                     <div class="row mt-5">
                         <div class="col-sm-12 text-center">
-                            <a href="#"><button type="submit" class="send-btn"><?= $contact_form_button_text ?></button></a>
+                            <a href="#"><button style="padding: 0.5rem" type="submit" class="send-btn"><?= $contact_form_button_text ?></button></a>
                         </div>
                     </div>
                 </form>
