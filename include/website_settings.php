@@ -86,7 +86,7 @@ $contact_us_content = stripslashes(htmlspecialchars_decode($get_website_info->co
 
 //Services
 $services = array();
-$service_query = "SELECT * FROM services order by service_order desc";
+$service_query = "SELECT * FROM services order by service_order asc";
 $service_query_result = mysqli_query($connection_string, $service_query);
 if (mysqli_num_rows($service_query_result) > 0) {
     while ($data = mysqli_fetch_assoc($service_query_result)) {
