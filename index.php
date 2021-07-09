@@ -153,7 +153,7 @@ include 'includes/header.php';
         </div>
         <div class="row mt-3 mt-lg-5">
             <div class="col-sm-12 text-center">
-                <a href="#"><button type="submit" class="button-contact"><?= $service_button_text ?></button></a>
+                <a href=""><button type="submit" id="contact" class="button-contact"><?= $service_button_text ?></button></a>
             </div>
         </div>
     </div>
@@ -217,7 +217,7 @@ include 'includes/header.php';
                 <!-- <h2 class="mt-2">CONTACT US</h2> -->
             </div>
         </div>
-        <div class="row">
+        <div id="mc4wp-form-2" class="row">
             <div class="col-sm-12 col-md-2">
             </div>
             <div class="col-sm-12 col-md-8 text-center">
@@ -276,6 +276,11 @@ include 'includes/header.php';
 <script src="send_form.js"></script>
 <script>
     $(document).ready(function() {
+        $('#contact').click(function(event) {
+            $('html, body').animate({
+                scrollTop: $("#mc4wp-form-2").offset().top
+            }, 2000);
+        });
 
         $("#register").click(function(e) {
             if ($("#checkSurfaceEnvironment-1").prop('checked') == true) {
