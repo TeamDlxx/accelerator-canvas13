@@ -153,7 +153,7 @@ include 'includes/header.php';
         </div>
         <div class="row mt-3 mt-lg-5">
             <div class="col-sm-12 text-center">
-                <a href=""><button type="submit" id="contact" class="button-contact"><?= $service_button_text ?></button></a>
+                <button type="submit" id="contact" class="button-contact"><?= $service_button_text ?></button>
             </div>
         </div>
     </div>
@@ -217,7 +217,7 @@ include 'includes/header.php';
                 <!-- <h2 class="mt-2">CONTACT US</h2> -->
             </div>
         </div>
-        <div id="mc4wp-form-2" class="row">
+        <div class="row">
             <div class="col-sm-12 col-md-2">
             </div>
             <div class="col-sm-12 col-md-8 text-center">
@@ -227,7 +227,7 @@ include 'includes/header.php';
                         </div>
                         <div id="error" class="w-100">
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-lg-6 col-md-6 col-sm-12" id="contact-form">
                             <div class="d-flex border-bottom mt-5">
                                 <label for="name" class="form-label pt-3">NAME*</label>
                                 <input type="name" class="form-contact-control" id="name" placeholder="Type your full name">
@@ -278,8 +278,8 @@ include 'includes/header.php';
     $(document).ready(function() {
         $('#contact').click(function(event) {
             $('html, body').animate({
-                scrollTop: $("#mc4wp-form-2").offset().top
-            }, 2000);
+                scrollTop: $("#contact-form").offset().top
+            }, 1000);
         });
 
         $("#register").click(function(e) {
